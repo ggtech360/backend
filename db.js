@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-const mongoURI = "127.0.0.1:27017";
+const mongoURI = "mongodb+srv://gnotedb:d1r54ev9l@gnotedb.nzssu1y.mongodb.net";
 
 const database = 'gnotebook';
 
 async function connectToMongo(){
-    await mongoose.connect(`mongodb://${mongoURI}/${database}`);
+    await mongoose.connect(`${mongoURI}/${database}`);
     console.log('Connected Successfully');
 }
 module.exports = connectToMongo;
+
