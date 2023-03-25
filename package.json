@@ -4,7 +4,6 @@
   "description": "GNoteBook - Take Note on the Cloud. Save money.",
   "main": "index.js",
   "scripts": {
-    "build": "vite build",
     "start": "node index.js"
   },
   "author": "GreatGamer",
